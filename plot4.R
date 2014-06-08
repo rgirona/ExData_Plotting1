@@ -1,5 +1,5 @@
 ## Set up the grid 2x2
-par(mfrow = c(2, 2), mar=c(4,3.8,2,2.5), cex=0.65)
+par(mfrow = c(2, 2), mar=c(4,3.8,2,2), cex=0.65)
 ## png(file = "plot4.png", width = 480, height = 480, units = "px", bg = "white")
 ## WARNING: In plot4.png the days of the week are in Spanish due to the OS language 
 
@@ -34,7 +34,7 @@ with (data,
       lines(Time,Sub_metering_3, col = "blue")
       )
 title(ylab="Energy sub metering")
-legend("topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), col = c(1,2,4), lty = 1, bty = "n")
+legend("topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), col = c(1,2,4), lty = 1, bty = "n", inset = 0.07)
 
 ## Graph on the bottom right (2,2)
 plot(data$Time,as.numeric(data$Global_reactive_power),type="l",xlab="datetime",ylab="Global_reactive_power")
