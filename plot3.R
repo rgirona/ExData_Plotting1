@@ -1,5 +1,6 @@
 ## Read the file with data.table functions
 options(warn = -1)
+Sys.setlocale("LC_TIME", "C")
 data <- fread("household_power_consumption.txt")
 ## Select rows
 data <- subset(data,Date == "1/2/2007" | Date == "2/2/2007" )

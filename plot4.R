@@ -6,6 +6,7 @@ par(mfrow = c(2, 2), mar=c(4,3.8,2,2), cex=0.65)
 
 ## Read the file with dapar(mar=c(4,3.8,2,2.5))ta.table functions
 options(warn = -1)
+Sys.setlocale("LC_TIME", "C")
 data <- fread("household_power_consumption.txt")
 ## Select rows
 data <- subset(data,Date == "1/2/2007" | Date == "2/2/2007" )
